@@ -1,0 +1,17 @@
+
+extends layout
+
+block title
+  title talkLiveNoteMrkDwn - visualizeLogin
+
+block content
+  div#main.container.text-center
+    h1.text-center
+      a(href="/") talkLiveNoteMrkDwn
+      span >visualizeLogin
+    hr
+    form.form-group(method="get" action="/visualize")
+      p.text-center
+        input.form-control.text-center(type="text" name="userId")
+      p.text-center
+        button.btn.btn-success.btn-xs(type="submit") login

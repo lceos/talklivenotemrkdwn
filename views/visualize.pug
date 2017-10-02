@@ -1,0 +1,14 @@
+
+extends layout
+
+block title
+  title talkLiveNoteMrkDwn- visualize
+
+block content
+  div#main.container
+    h1.text-center
+      a(href="/") talkLiveNoteMrkDwn 
+      span >visualize
+    hr
+    input#userId(type="hidden" value=userId)
+    ul#visualize

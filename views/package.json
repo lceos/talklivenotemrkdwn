@@ -1,0 +1,36 @@
+{
+  "name": "talklivenotemrkdwn",
+  "license": "SEE LICENCE IN README.md",
+  "author": "lceos.xyz",
+  "homepage": "https://github.com/lceos/talklivenotemrkdwn.git#README.md",
+  "version": "0.0.1",
+  "keywords": [
+    "socket io",
+    "express",
+    "markdown",
+    "tts"
+  ],
+  "description": "a simple text paste over websocket to write markdown",
+  "dependencies": {
+    "eslint": "^4.7.1",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "pug": "^2.0.0-rc.2",
+    "socket.io": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lceos/talklivenotemrkdwn.git"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

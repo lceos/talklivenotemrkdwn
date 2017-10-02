@@ -1,0 +1,44 @@
+
+extends layout
+
+append head
+  script(src="/js/markdown-it.js")
+  script(src="/js/markdown-it-footnote.js")
+  script(src="/js/highlight.pack.js")
+  script(src="/codemirror/lib/codemirror.js")
+  script(src="/codemirror/overlay.js")
+  script(src="/codemirror/xml/xml.js")
+  script(src="/codemirror/markdown/markdown.js")
+  script(src="/codemirror/gfm/gfm.js")
+  script(src="/codemirror/javascript/javascript.js")
+  script(src="/codemirror/css/css.js")
+  script(src="/codemirror/htmlmixed/htmlmixed.js")
+  script(src="/codemirror/lib/util/continuelist.js")
+  script(src="/js/rawinflate.js")
+  script(src="/js/rawdeflate.js")
+  link(rel="stylesheet" href="/css/base16-light.css")
+  link(rel="stylesheet" href="/codemirror/lib/codemirror.css")
+  link(rel="stylesheet" href="/css/default.css")
+
+block title
+  title talkLiveNoteMrkDwn - editor
+
+block content
+  h1.text-center
+    a(href="/") talkLiveNoteMrkDwn 
+    span >speech
+  p.text-center hello #{userId}
+  hr
+  div#row
+    div.col-xs-12.col-sm-6
+      div#in
+        button#saveas-markdown.btn.btn-primary.btn-xs save as markdown
+        button#saveas-html.btn.btn-primary.btn-xs save as html
+        form: textarea#code
+          |  # Title
+    div.col-xs-12.col-sm-6
+      div#out
+        div#app
+          h1 Titre
+  input#userId(type="hidden" name="userId" value=userId)
+  script(src="/js/script.js")

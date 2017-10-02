@@ -1,0 +1,23 @@
+
+extends layout
+
+block title
+  title talkLiveNoteMrkDwn - speech
+
+block content
+  div#main.container
+    h1.text-center
+      a(href="/") talkLiveNoteMrkDwn 
+      span >speech
+    p.text-center hello #{userId}
+    hr
+    p.text-success #haystack
+    div#haystack(action="")
+    hr
+    p.text-success #form
+    form#speechForm.form-group(action="")
+      p.text-center
+        textarea#m.form-control(rows="3")
+      p.text-center
+        input#userId(type="hidden" name="userId" value=userId)
+        button.btn.btn-primary.btn-xs Add manually
